@@ -4,7 +4,7 @@ from todoapp.forms import UserRegisterForm,UserLoginForm
 from django.http import HttpResponse
 from django.contrib import messages
 from django.contrib.auth.models import User  # as form.save doesnot hash password we use user .create method
-from django.contrib.auth import authenticate,login,logout
+from django.contrib.auth import authenticate
 
 # Create your views here.
 class UserRegister(View):

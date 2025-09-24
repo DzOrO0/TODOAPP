@@ -35,9 +35,7 @@
     
     <div class="w-50 d-flex flex-column shadow justify-content-center align-items-center p-5 mt-5">
         <h1 class="mb-5">USER REGISTER</h1>
-    <form action="" method="post">
-
-    
+    <form action="" method="post">    
         {% csrf_token %}
         <div>
             <label for="" class="form-label">NAme</label>
@@ -51,12 +49,11 @@
             <label for="" class="form-label">PASSWORD</label>
             {{form.password}}
         </div>
-        
         <!-- {{form}} -->
         <button type="submit" class="btn btn-primary">SUBMIT</button>
     </form>
     </div>
-    <a href="{% url 'u_login'%}" class="btn btn-primary"></a>
+    <a href="{% url 'u_login'%}" class="btn btn-primary">LOGIN</a>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -73,5 +70,6 @@
     ></script> -->
 
     <!-- More: https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
-  </body>
+  
+</body>
 </html>
